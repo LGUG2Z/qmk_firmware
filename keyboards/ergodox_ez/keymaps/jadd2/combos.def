@@ -1,0 +1,57 @@
+SUBS(capA,           "A",  MOD_A, MOD_S)
+COMB(sdOsmShift,          OSM(MOD_LSFT),  MOD_S, LT(2, KC_D))
+COMB(smShift,          OSM(MOD_LSFT),  LT(1, KC_BSPACE), LT(5, KC_SPACE))
+
+COMB(afdCtrlAltDelete, C(A(KC_DEL)), MOD_A, MOD_F, LT(2, KC_D))
+
+COMB(ioTab,      KC_TAB,      KC_I,  KC_O)
+COMB(jkEsc,      KC_ESC,      MOD_J, MOD_K)
+COMB(sdfEsc,     KC_ESC,      MOD_S, LT(2, KC_D), MOD_F)
+
+// Shortcuts
+COMB(onePassword, LCTL(KC_BSLASH), KC_O,           KC_P)
+COMB(find,        LCTL(KC_F),      MOD_F, LT(2,  KC_D))
+COMB(altEnter,    LALT(KC_ENTER),  MOD_J, MOD_K, MOD_L)
+COMB(ctrlSpace,   LCTL(KC_SPACE),  RGUI_T(KC_M),           KC_COMMA)
+
+// Ligatures
+SUBS(codeFence,          "```", KC_C,                    MOD_F)     // CF: Code Block
+SUBS(arrow,              "->",  MOD_J, MOD_K, MOD_A,  KC_R)             // JK AR: Arrow
+SUBS(fatArrow,           "=>",  MOD_J, MOD_K, MOD_F, MOD_A)             // JK FA: Fat Arrow
+SUBS(lessThan,           "<",   MOD_J, MOD_K, MOD_L,   MOD_S)             // JK LS: Less
+SUBS(lessThanOrEqual,    "<=",  MOD_J, MOD_K, MOD_L,   KC_E)             // JK LE: Less/Equal
+SUBS(greaterThan,        ">",   MOD_J, MOD_K, KC_G,    KC_R)             // JK GR: Greater
+SUBS(greaterThanOrEqual, ">=",  MOD_J, MOD_K, KC_G,    KC_E)             // JK GE: Greater/Equal
+
+// Shifted Punctuation
+SUBS(colon,       ":",             MOD_K,         MOD_L)               // KL: KoLon
+SUBS(equal,       "=",             KC_E,          KC_W)               // EW: E-kWal
+COMB(underscore,  KC_UNDERSCORE,   KC_U,          MOD_S)               // US: Underscore
+COMB(doubleQuote, KC_DOUBLE_QUOTE, KC_Q,          KC_W)               // QW: QW-ote
+
+// Top Level Punctuation
+COMB(backslash, KC_BSLASH, MOD_S, KC_C)             // SC: Escape
+
+// Braces
+SUBS(roundOpen,   "(", MOD_J, KC_R)
+SUBS(roundClose,  ")", MOD_K,   KC_R)
+SUBS(squareOpen,  "[", MOD_J, MOD_S)
+SUBS(squareClose, "]", MOD_K,   MOD_S)
+SUBS(curlyOpen,   "{", MOD_J, KC_C)
+SUBS(curlyClose,  "}", MOD_K,   KC_C)
+SUBS(angleOpen,   "<", MOD_J, MOD_A)
+SUBS(angleClose,  ">", MOD_K,   MOD_A)
+
+// Function Keys
+COMB(f1,  KC_F1,  MOD_F, KC_M)
+COMB(f2,  KC_F2,  MOD_F, KC_COMMA)
+COMB(f3,  KC_F3,  MOD_F, KC_DOT)
+COMB(f4,  KC_F4,  MOD_F, MOD_J)
+COMB(f5,  KC_F5,  MOD_F, MOD_K)
+COMB(f6,  KC_F6,  MOD_F, MOD_L)
+COMB(f7,  KC_F7,  MOD_F, KC_U)
+COMB(f8,  KC_F8,  MOD_F, KC_I)
+COMB(f9,  KC_F9,  MOD_F, KC_O)
+COMB(f10, KC_F10, MOD_F, KC_N)
+COMB(f11, KC_F11, MOD_F, KC_H)
+COMB(f12, KC_F12, MOD_F, KC_Y)
